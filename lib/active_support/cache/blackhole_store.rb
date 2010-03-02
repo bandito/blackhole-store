@@ -15,6 +15,7 @@ module ActiveSupport
   
       def write(key, value, options = nil)
         log("Write", key, options)
+        value
       end
   
       def delete(key, options = nil)

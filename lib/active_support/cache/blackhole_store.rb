@@ -2,24 +2,22 @@ module Blackhole
   module Rails2
 
     def read(key, options = nil)
-      log("Read", key, options)
+      super
       nil
     end
 
     def write(key, value, options = nil)
-      log("Write", key, options)
+      super
       value
     end
 
     def delete(key, options = nil)
-      log("Delete", key, options)
+      super
       false
     end
 
-    def delete_matched(matcher, options = nil)
-    end
-
     def exist?(key, options = nil)
+      super
       false
     end
 

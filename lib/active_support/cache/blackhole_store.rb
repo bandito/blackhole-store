@@ -32,6 +32,10 @@ module Blackhole
     def write_entry(key, entry, options)
       entry
     end
+
+    def delete_entry(key, options)
+      false
+    end
   end
 
   module Store
